@@ -1,1 +1,1 @@
-# ecommerce-sample
+# ecommerce back end sample
