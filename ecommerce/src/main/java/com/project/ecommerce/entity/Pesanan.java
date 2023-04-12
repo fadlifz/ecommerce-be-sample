@@ -19,6 +19,7 @@ import lombok.Data;
 @Entity
 @Data
 public class Pesanan implements Serializable{
+    
     @Id
     private String id;
 
@@ -41,4 +42,8 @@ public class Pesanan implements Serializable{
 
     @Enumerated(EnumType.STRING)
     private StatusPesanan statusPesanan;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date waktuDibuat;
+
 }

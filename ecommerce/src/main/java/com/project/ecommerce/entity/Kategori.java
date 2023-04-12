@@ -15,4 +15,5 @@ public class Kategori implements Serializable{
 
     private String nama;
 
+    
 }

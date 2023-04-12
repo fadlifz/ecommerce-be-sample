@@ -26,4 +26,5 @@ public class Pengguna implements Serializable{
     private String roles;
 
     private Boolean isAktif;
+    
 }
