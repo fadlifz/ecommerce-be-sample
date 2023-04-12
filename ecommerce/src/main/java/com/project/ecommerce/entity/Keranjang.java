@@ -11,23 +11,23 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Produk implements Serializable{
-
+public class Keranjang implements Serializable{
+    
     @Id
     private String id;
 
-    private String nama;
-
-    private String deskripsi;
-
-    private String gambar;
+    @JoinColumn
+    @ManyToOne
+    private Produk produk;
 
     @JoinColumn
     @ManyToOne
-    private Kategori kategori;
+    private Pengguna pengguna;
+
+    private Double kuantitas;
 
     private BigDecimal harga;
 
-    private Double stok;
-    
+    private BigDecimal jumlah;
+
 }
